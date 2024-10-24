@@ -84,6 +84,8 @@ func (c *Client) AddStreamClient(ctx context.Context, streamName string, opts ..
 		return err
 	}
 
+	commitmentLevel := geyser_pb.CommitmentLevel_CONFIRMED
+
 	streamClient := &StreamClient{
 		Ctx:    ctx,
 		geyser: stream,
@@ -96,7 +98,7 @@ func (c *Client) AddStreamClient(ctx context.Context, streamName string, opts ..
 			BlocksMeta:         make(map[string]*geyser_pb.SubscribeRequestFilterBlocksMeta),
 			Entry:              make(map[string]*geyser_pb.SubscribeRequestFilterEntry),
 			AccountsDataSlice:  make([]*geyser_pb.SubscribeRequestAccountsDataSlice, 0),
-			Commitment:         geyser_pb.CommitmentLevel_CONFIRMED,
+			Commitment:       &commitmentLevel,
 		},
 		Ch:    make(chan *geyser_pb.SubscribeUpdate),
 		ErrCh: make(chan error),
