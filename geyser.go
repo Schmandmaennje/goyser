@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"github.com/gagliardetto/solana-go"
 	"github.com/gagliardetto/solana-go/rpc"
-	"github.com/weeaa/goyser/pb"
+	"github.com/schmandmaennje/goyser/pb"
 	"google.golang.org/grpc"
 	"slices"
 	"strconv"

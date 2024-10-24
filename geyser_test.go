@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/joho/godotenv"
 	"github.com/stretchr/testify/assert"
-	"github.com/weeaa/goyser/pb"
+	"github.com/schmandmaennje/goyser/pb"
 	"log"
 	"os"
 	"path/filepath"

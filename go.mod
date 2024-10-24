@@ -1,4 +1,4 @@
-module github.com/Schmandmaennje/goyser
+module github.com/schmandmaennje/goyser
 
 go 1.22.1
 

@@ -49,7 +49,7 @@ It also contains a feature to convert Goyser types to [github.com/gagliardetto/s
 
 Go 1.22.0 or higher.
 ```shell
-go get github.com/weeaa/goyser@latest
+go get github.com/schmandmaennje/goyser@latest
 ```
 
 ## 💻 Examples
@@ -61,8 +61,8 @@ package main
 
 import (
   "context"
-  "github.com/weeaa/goyser"
-  "github.com/weeaa/goyser/pb"
+  "github.com/schmandmaennje/goyser"
+  "github.com/schmandmaennje/goyser/pb"
   "log"
   "os"
   "time"
